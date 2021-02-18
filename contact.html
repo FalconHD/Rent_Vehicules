@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Welcome to our Vehicles Rental platform where you Can rent Any kind of Vehicles"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>RESERVATION</title>
+</head>
+<body>
+    <header>
+        <section class="header-menu">
+            <div class="logoContainer">
+                <a href="index.html"  ><img src="img/logo.png" alt="" class="logo" alt="Car Rent Logo"></a>
+            </div>
+           
+        </section>
+        <ul >
+            <a href="index.html">
+                <li onmouseover="backButton(this)" onmouseout="removeActive(this)">
+                    <span class="choiseHeader">
+                        <i class="fas fa-home active"></i>
+                        HOME
+                    </span>
+                    <div class="mask"></div>
+                </li>
+            </a>
+            <a href="reservation.html">
+                <li>
+                    <span class="choiseHeader">
+                        <i class="fas fa-key"></i>
+                        RESERVATION
+                    </span>
+                    <div class="mask "></div>
+
+                </li>
+            </a>
+            <a href="contact.html">
+                <li>
+                    <span class="choiseHeader">
+                        <i class="fas fa-envelope-open-text"></i>
+                        CONTACT
+                    </span>
+                    <div class="mask active"></div>
+                </li>
+            </a>
+        </ul>
+        <section class="log">
+            <ul>
+                <li>LOGIN</li>
+                <li>REGISTER</li>
+            </ul>
+        </section>
+        <div class="closeOpen">
+            <i id="openHeader" onclick="openHeader(this)" class="fas fa-bars"></i>
+            <i id="closeHeader"  onclick="closeHeader(this)" class="fas fa-times"></i>
+        </div>
+    </header>
+
+
+
+    <div class="Container">
+        
+        <div class="formContainer">
+            <h1>Contact Us</h1>
+            <div class="content">
+                <section class="formSection">
+                    <form >
+                        <span>
+                            <input type="text" name="name" id="nameInput"  placeholder="Full Name">
+                            <div id="handname" class="hand">
+                                <i class="fas fa-check-square "></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Pleas Verify Your Name Again</small>
+                            </div>
+                            
+                        </span>
+                        <span>
+                            <input type="email" name="email" id="emailInput"  placeholder="Your Email">
+                            <div id="handEmail" class="hand">
+                                <i class="fas fa-check-square"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Pleas Verify your Email Again</small>
+                            </div>
+                        </span>
+                        <span>
+                            <textarea name="message" id="messageInput" cols="30" rows="10" placeholder="Feel Free ...!"></textarea>
+                            <div  id="handMessage" class="hand">
+                                <i class="fas fa-check-square"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Pleas Verify Again</small>
+                            </div>
+                        </span>
+                        
+                        <button id="send" type="submit" class="btn" >Send</button>
+                    </form>
+                </section>
+                <section class="svgSection">
+                    <img src="/img/CarRent.png" alt="Car Rent Logo" >
+                </section>
+            </div>
+        </div>
+        <div class="contactpop">
+            <section class="popupContainer">
+                <h1>Message Sent successfully</h1>
+                <ul>
+                    <div>
+                        <i class="fas fa-user-edit"></i><li id="finalName"></li>
+                    </div>
+                    <div>
+                        <i class="fas fa-at"></i><li id="finalEmail"></li>
+                    </div>
+                    <div>
+                        <i class="fas fa-sms"></i><li id="finalMessage"></li>
+                    </div>
+                  
+                </ul>
+                <div id="yes">
+                    <i class="fas fa-thumbs-up fomrSUcces"></i>
+                </div>
+                <div id="closeForm">
+                    <i class="fas fa-times"></i>
+                </div>
+                
+            </section>
+        </div>
+    </div>
+    
+</body>
+<script src="styling.js"></script>
+<script src="main.js"></script>
+
+</html>

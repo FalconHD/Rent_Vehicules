@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Welcome to our Vehicles Rental platform where you Can rent Any kind of Vehicles"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>RESERVATION</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-menu">
+            <div class="logoContainer">
+                <a href="index.html"><img src="img/logo.png" alt="Vehicles Rent Logo" class="logo"></a>
+            </div>
+           
+        </section>
+        <ul >
+            <a href="index.html">
+                <li onmouseover="backButton(this)" onmouseout="removeActive(this)">
+                    <span class="choiseHeader">
+                        <i class="fas fa-home active"></i>
+                        HOME
+                    </span>
+                    <div class="mask"></div>
+                </li>
+            </a>
+            <a href="reservation.html">
+                <li>
+                    <span class="choiseHeader">
+                        <i class="fas fa-key"></i>
+                        RESERVATION
+                    </span>
+                    <div class="mask active"></div>
+
+                </li>
+            </a>
+            <a href="contact.html">
+                <li onmouseover="backButton(this)" onmouseout="removeActive(this)">
+                    <span class="choiseHeader">
+                        <i class="fas fa-envelope-open-text"></i>
+                        CONTACT
+                    </span>
+                    <div class="mask"></div>
+                </li>
+            </a>
+        </ul>
+        <section class="log">
+            <ul>
+                <li>LOGIN</li>
+                <li>REGISTER</li>
+            </ul>
+        </section>
+        <div class="closeOpen">
+            <i id="openHeader" onclick="openHeader(this)" class="fas fa-bars"></i>
+            <i id="closeHeader"  onclick="closeHeader(this)" class="fas fa-times"></i>
+        </div>
+    </header>
+
+
+
+    <div class="Container-Rese">
+
+        <div class="steps">
+            <h1>Reservation</h1>
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
+            <div class="reservation">
+                <div class="first-round">
+                    <div class="choiseContainer"><img alt="berlin" src="img/berlin.svg"><button onclick="RoundTow(name)"
+                            name="berlin" class="ch btn">berlin</button></div>
+                    <div class="choiseContainer"><img alt="camion" src="img/camion.svg"><button onclick="RoundTow(name)"
+                            name="camion" class="ch btn">camion</button></div>
+                    <div class="choiseContainer"><img alt="compact" src="img/compact.svg"><button onclick="RoundTow(name)"
+                            name="compact" class="ch btn">compact</button></div>
+                    <div class="choiseContainer"><img alt="citadin" src="img/citadin.svg"><button onclick="RoundTow(name)"
+                            name="citadin" class="ch btn">citadin</button></div>
+                    <div class="choiseContainer"><img  alt="utilitaire" src="img/utilitaire.svg"><button onclick="RoundTow(name)"
+                            name="utilitaire" class="ch btn">utilitaire</button></div>
+                    <div class="choiseContainer"><img alt="moto" src="img/moto.svg"><button onclick="RoundTow(name)"  name="moto"
+                            class="ch btn">moto</button></div>
+                    <div class="choiseContainer"><img alt="chantier" src="img/chantier.svg"><button onclick="RoundTow(name)"
+                            name="chantier" class="ch btn">chantier</button></div>
+                </div>
+                
+            </div>
+            <div class="buttonsReser">
+                <button id="prev" class="prev btn" name="prev" onclick="prev()" disabled>previous</button>
+                <button id="submit" class="submit btn" name="submit" onclick="Submit()" disabled>Submit</button>
+            </div>
+        </div>
+        <div class="submitionPop">
+            <section>
+                <h1>Your Order Submitted Successfully</h1>
+                <span id="waiting">Redirecting after 4 second</span>
+            </section>
+        </div>
+
+    </div>
+
+</body>
+<script src="styling.js"></script>
+<script src="main.js"></script>
+
+
+</html>

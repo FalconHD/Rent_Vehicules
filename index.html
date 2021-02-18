@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Welcome to our Vehicles Rental platform where you Can rent Any kind of Vehicles"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>index</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-menu">
+            <div class="logoContainer">
+                <a href="index.html"><img src="img/logo.png" alt="Vehicles Rent Logo" class="logo"></a>
+            </div>
+           
+        </section>
+        <ul >
+            <a href="index.html">
+                <li>
+                    <span class="choiseHeader">
+                        <i class="fas fa-home active"></i>
+                        HOME
+                    </span>
+                    <div class="mask active"></div>
+                </li>
+            </a>
+            <a href="reservation.html">
+                <li  onmouseover="backButton(this)" onmouseout="removeActive(this)">
+                    <span class="choiseHeader">
+                        <i class="fas fa-key"></i>
+                        RESERVATION
+                    </span>
+                    <div class="mask "></div>
+
+                </li>
+            </a>
+            <a href="contact.html">
+                <li onmouseover="backButton(this)" onmouseout="removeActive(this)">
+                    <span class="choiseHeader">
+                        <i class="fas fa-envelope-open-text"></i>
+                        CONTACT
+                    </span>
+                    <div class="mask"></div>
+                </li>
+            </a>
+        </ul>
+        <section class="log">
+            <ul>
+                <li>LOGIN</li>
+                <li>REGISTER</li>
+            </ul>
+        </section>
+        <div class="closeOpen">
+            <i id="openHeader" onclick="openHeader(this)" class="fas fa-bars"></i>
+            <i id="closeHeader"  onclick="closeHeader(this)" class="fas fa-times"></i>
+        </div>
+    </header>
+
+    <div id="home" class="Container">
+        <img class="shape" src="img/shape.svg" alt="Vehicles Rent Logo">
+        <section class="mainPage-descriptin">
+            <h1>Try Now Our <span>Service</span></h1>
+            <div class="service">
+                <span>
+                    <i class="fas fa-bolt"></i>
+                    <h4>Fast</h4>
+                </span>
+                <span>
+                    <i class="fas fa-lock"></i>
+                    <h4>secure</h4>
+                </span>
+                <span>
+                    <i class="fas fa-business-time"></i>
+                    <h4>24h/7</h4>
+                </span>
+            </div>
+            <a href="#Gallery"><button>START NOW</button></a>
+        </section>
+        <section class="svg-main-page">
+            <img src="img/Car rent.png" alt="Vehicles Rent Logo">
+        </section>
+    </div>
+
+    <div id="Gallery" class="Container">
+        <div class="Gallery">
+            <div class="gall">
+                <h1>Discover <span>More</span></h1>
+                <section class="filter"></section>
+            </div>
+
+            <section class="photos"></section>
+        </div>
+        <div class="maskGallery">
+
+        </div>
+    </div>
+    <div class="lastPage">
+        <h1>Find <span>Us</span></h1>
+        <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=morocco%20safi+(My%20Business%20Name)&amp;t=h&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+    </div>
+    <footer>
+        <section>
+            <div>
+                <a href="#home"><img src="img/logo.png" alt="Vehicles Rent Logo" class="logo"></a>
+            </div>
+        </section>
+        <section class="service foot">
+            <span>
+                <i class="fas fa-bolt"></i>
+                <h4>Fast</h4>
+            </span>
+            <span>
+                <i class="fas fa-lock"></i>
+                <h4>secure</h4>
+            </span>
+            <span>
+                <i class="fas fa-business-time"></i>
+                <h4>24h/7</h4>
+            </span>
+        </section>
+        <section class="socialHome">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-linkedin"></i>
+        </section>
+    </footer>
+
+</body>
+<script src="styling.js"></script>
+<script src="Gallery.js"></script>
+
+
+</html>
