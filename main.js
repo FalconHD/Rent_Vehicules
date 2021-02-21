@@ -216,53 +216,7 @@ function prev() {
     } else if (customerChoises.Vname != "") {
         firstRound()
      } 
-    //else {
-    //     var newChoises = choises.querySelectorAll(".choiseContainer");
-    //     newChoises.forEach(elm => {
-    //         elm.remove();
-    //     })
-    //     let button = document.createElement("button")
-    //     let container = document.createElement("div")
-    //     let img = document.createElement("img")
-    //     img.setAttribute("src", `img/automatically.svg`)
-    //     container.setAttribute("class", "choiseContainer")
-    //     button.innerHTML = "automatically"
-    //     button.setAttribute('name', "automatically")
-    //     button.setAttribute('onclick', 'firstRound(name)')
-    //     button.setAttribute('class', "ch")
-    //     button.classList.add("btn")
-    //     container.appendChild(img)
-    //     container.appendChild(button)
-    //     choises.appendChild(container)
-    //     //--------------------------------------------
-    //     button = document.createElement("button")
-    //     container = document.createElement("div")
-    //     img = document.createElement("img")
-    //     img.setAttribute("src", `img/manually.svg`)
-    //     container.setAttribute("class", "choiseContainer")
-    //     button.innerHTML = "manually"
-    //     button.setAttribute('name', "manually")
-    //     button.setAttribute('onclick', 'firstRound(name)')
-    //     button.setAttribute('class', "ch")
-    //     button.classList.add("btn")
-    //     container.appendChild(img)
-    //     container.appendChild(button)
-    //     choises.appendChild(container)
-    //     //--------------------------------------------
-    //     button = document.createElement("button")
-    //     container = document.createElement("div")
-    //     img = document.createElement("img")
-    //     img.setAttribute("src", `img/moto.svg`)
-    //     container.setAttribute("class", "choiseContainer")
-    //     button.innerHTML = "Moto"
-    //     button.setAttribute('name', "moto")
-    //     button.setAttribute('onclick', 'RoundTow(name)')
-    //     button.setAttribute('class', "ch")
-    //     button.classList.add("btn")
-    //     container.appendChild(img)
-    //     container.appendChild(button)
-    //     choises.appendChild(container)
-
+    
     }
 
 
