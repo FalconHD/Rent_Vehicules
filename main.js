@@ -366,7 +366,7 @@ function Submit() {
     previous.disabled = true
     submit.disabled = true
     setTimeout(()=>{
-        location.href = "http://localhost:3000/index.html"
+        location.href = "/index.html"
     },5000)
     
     

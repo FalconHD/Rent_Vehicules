@@ -155,12 +155,18 @@ function getImages(item,name) {
 }
 const urlContainer = document.querySelector(".maskGallery")
 var bigImg = document.createElement("img")
+var closeImg = document.createElement("span")
+var i = document.createElement("i")
+closeImg.setAttribute("id" , "closeimg")
 bigImg.setAttribute("class", "bigImage")
+i.setAttribute("class" , "fas fa-window-close")
+closeImg.appendChild(i)
 
 function getUrl(url) {
     bigImg.setAttribute("src", url)
     urlContainer.classList.add("active")
     urlContainer.appendChild(bigImg)
+    urlContainer.appendChild(closeImg)
 }
 
 

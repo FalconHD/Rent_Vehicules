@@ -139,7 +139,7 @@ function openHeader(item) {
 function closeHeader(item) {
     var header = document.querySelector("header")
     var openHeader = document.querySelector("#openHeader")
-    header.style.height = "10%"
+    header.style.height = "11%"
     item.style.visibility = "hidden"
     openHeader.style.visibility = "visible"
     header.querySelector("header ul").style.visibility ='hidden'
